@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="crt">
+      <header>
+        <h1>Welcome to My Retro Site</h1>
       </header>
+      <main>
+        <section>
+          <h2>About</h2>
+          <p>This is a retro-themed website with a CRT shader effect.</p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2024 My Retro Site</p>
+      </footer>
     </div>
   );
-}
+};
 
 export default App;
